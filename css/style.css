@@ -17,64 +17,88 @@ Author: Clare Ralston
 body {
   color: #34393b;
   font-size: 20px;
-  color: #606161;
+  color: #2f2f2f;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: 300;
 }
 
 a {
   text-decoration: none;
 }
 
-
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+.welcome {
+    background: url(../images/welcome.jpg) no-repeat center center fixed;
+}
+
 header {
-    height: 50px;
+    height: 80px;
+    background-color: white;
 }
 
-.container {
-    width: 980px;
-    margin: 0 auto;
-    background-color: yellow;
+header #logo {
+    float: left;
+    padding: 15px 0 0 0;
 }
 
-h1 {
+header .desktop ul li {
+    display: inline-block;
+    float: right;
+    text-transform: uppercase;
+    margin: 15px 20px 0 20px;
+    padding: 15px 0 0 0;
+    font-size: 14px;
+    font-weight: 900;
+    width: none;
+}
+
+#welcome {
     text-align: center;
+    color: black;
+    font-size: 56px;
+    padding: 200px 0 30px 0;
 }
 
 #welcome-note {
     text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+#container-btn {
+    width: 500px;
+    margin: 0 auto;
 }
 
 .green-btn {
     font-weight: 600;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 16px;
-    background-color: green;
+    background-color: #71BE3C;
     width: 200px;
     padding: 12px;
     text-align: center;
-    margin: 50px;
+    margin: 50px 0px;
     border-radius: 4px;
     float:left;
 }
 
 .blue-btn {
     font-weight: 600;
-    color: white;
+    color: #ffffff;
     text-transform: uppercase;
     font-size: 16px;
-    background-color: blue;
+    background-color: #0099cc;
     width: 200px;
     padding: 12px;
     text-align: center;
-    margin: 50px;
+    margin: 50px 0px;
     border-radius: 4px;
-    float:left;
+    float:right;
 }
 
 /******************************************
