@@ -3,20 +3,66 @@ Project Name: Final Project
 Author: Clare Ralston
 */
 
-
 /******************************************
 /* SETUP
 /*******************************************/
 
+html, body, ul, ol, li, form, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
 
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+fieldset,img {
+    border: 0;
+}
+
+legend {
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td {
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select {
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym {
+    border-bottom: .1em dotted;
+    cursor: help;
+}
 
 /******************************************
 /* BASE STYLES
-/*******************************************/
+/******************************************/
 
 body {
     color: #34393b;
-    font-size: 20px;
     font-weight: 400;
     color: #2f2f2f;
     font-family: 'Open Sans', sans-serif;
@@ -29,12 +75,19 @@ body {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
+    color: #71BE3C;
+}
+
+h1 {
+    font-size: 36px;
+    background-color: yellow;
+    padding: 2% 5%;
 }
 
 /******************************************
 /* LAYOUT
-/*******************************************/
+/******************************************/
 
 .welcome {
     background: url(../images/welcome.jpg) no-repeat center center fixed;
@@ -42,7 +95,8 @@ a {
 
 header {
     height: 80px;
-    background-color: white;
+    padding: 0 2%;
+    background-color: #ffffff;
 }
 
 header #logo {
@@ -50,14 +104,15 @@ header #logo {
     padding: 15px 0 0 0;
 }
 
-header .desktop ul li {
-    display: inline-block;
-    float: right;
+header .desktop ul li a {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2f2f2f;
     text-transform: uppercase;
     margin: 15px 20px 0 20px;
     padding: 15px 0 0 0;
-    font-size: 14px;
-    font-weight: 700;
+    display: inline-block;
+    float: right;
     width: none;
 }
 
@@ -67,6 +122,10 @@ header .desktop ul li {
     padding: 15px 0 0 0;
     font-size: 14px;
     font-weight: 700;
+}
+
+.mobile a {
+    color: #2f2f2f;
 }
 
 .hide {
@@ -83,7 +142,7 @@ header .desktop ul li {
   .desktop {
     display: none;
   }
-  header .desktop ul li {
+  header .desktop ul li a {
     display: block;
     font-size: 14px;
     margin: 0px;
@@ -97,6 +156,8 @@ header .desktop ul li {
 }
 
 #welcome {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     color: black;
     font-size: 56px;
@@ -104,16 +165,61 @@ header .desktop ul li {
 }
 
 #welcome-note {
+    width: 90%;
+    margin: 0 auto;
     text-align: center;
     color: black;
     font-size: 24px;
     font-weight: 700;
 }
 
+@media only screen and (max-width: 960px) {
+    #welcome {
+        font-size: 42px;
+    }
+    #welcome-note {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #welcome {
+        font-size: 36px;
+    }
+    #welcome-note {
+        font-size: 14px;
+    }
+}
+
 #container-btn {
     width: 500px;
     margin: 0 auto;
 }
+
+.three-col {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.one-third-col {
+    width: 28%;
+    padding: 0 2.6%;
+    float: left;
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 768px) {
+    .one-third-col {
+        width: 100%;
+        padding: 3% 0;
+        clear: both;
+    }
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/******************************************/
 
 .green-btn {
     font-weight: 700;
@@ -142,11 +248,3 @@ header .desktop ul li {
     border-radius: 4px;
     float:right;
 }
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
-
-
-
