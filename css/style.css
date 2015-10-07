@@ -217,6 +217,92 @@ header .desktop ul li a {
     }
 }
 
+.four-col {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.four-col-one {
+    width: 19%;
+    padding: 0 2.6%;
+    float: left;
+    background-color: yellow;
+}
+
+.four-col-two {
+    width: 19%;
+    padding: 0 2.6%;
+    float: left;
+    background-color: yellow;
+}
+
+.four-col-three {
+    width: 19%;
+    padding: 0 2.6%;
+    float: left;
+    background-color: yellow;
+}
+
+.four-col-four {
+    width: 19%;
+    padding: 0 2.6%;
+    float: left;
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .four-col-one {
+        width: 46%;
+        padding: 3% 2%;
+        float: left;
+    }
+    .four-col-two {
+        width: 46%;
+        padding: 3% 2%;
+        float: left;
+    }
+    .four-col-three {
+        width: 46%;
+        padding: 3% 2%;
+        float: left;
+    }
+    .four-col-four {
+        width: 46%;
+        padding: 3% 2%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .four-col-one {
+        width: 100%;
+        padding: 3% 0;
+        clear: both;
+    }
+    .four-col-two {
+        width: 100%;
+        padding: 3% 0;
+        clear: both;
+    }
+    .four-col-three {
+        width: 100%;
+        padding: 3% 0;
+        clear: both;
+    }
+    .four-col-four {
+        width: 100%;
+        padding: 3% 0;
+        clear: both;
+    }
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /******************************************/
@@ -247,4 +333,51 @@ header .desktop ul li a {
     margin: 50px 0px;
     border-radius: 4px;
     float:right;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?4msp27');
+    src:url('fonts/icomoon.eot?4msp27#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?4msp27') format('truetype'),
+        url('fonts/icomoon.woff?4msp27') format('woff'),
+        url('fonts/icomoon.svg?4msp27#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-phone:before {
+    content: "\e800";
+}
+.icon-envelop:before {
+    content: "\e801";
+}
+.icon-location:before {
+    content: "\e802";
+}
+.icon-bubbles2:before {
+    content: "\e803";
+}
+.icon-cogs:before {
+    content: "\e804";
+}
+.icon-magic-wand:before {
+    content: "\e805";
+}
+.icon-leaf:before {
+    content: "\e806";
 }
