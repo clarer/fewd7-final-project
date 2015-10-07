@@ -13,7 +13,7 @@ html, body, ul, ol, li, form, fieldset, legend {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
+    margin: 2% 0;
 }
 
 fieldset,img {
@@ -49,7 +49,7 @@ caption, th, td {
 
 input, textarea, select {
     font-size: 110%;
-    line-height: 1.1;
+    line-height: 1;
 }
 
 abbr, acronym {
@@ -68,6 +68,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width: 960px) {
     body {
         font-size: 14px;
@@ -81,8 +87,27 @@ a {
 
 h1 {
     font-size: 36px;
-    background-color: yellow;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
     padding: 2% 5%;
+    background: url(../images/welcome.jpg) no-repeat center center fixed;
+
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 600px;    
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.intro {
+    margin: 2% 5%;
+    font-size: 18px;
 }
 
 /******************************************
@@ -196,17 +221,42 @@ header .desktop ul li a {
     margin: 0 auto;
 }
 
+.green-btn {
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #71BE3C;
+    width: 200px;
+    padding: 12px;
+    text-align: center;
+    margin: 50px 0px;
+    border-radius: 4px;
+    float:left;
+}
+
+.blue-btn {
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #0099cc;
+    width: 200px;
+    padding: 12px;
+    text-align: center;
+    margin: 50px 0px;
+    border-radius: 4px;
+    float:right;
+}
+
 .three-col {
-    width: 90%;
-    margin: 0 auto;
-    padding: 3% 0;
+    padding: 2% 3%;
 }
 
 .one-third-col {
-    width: 28%;
-    padding: 0 2.6%;
+    width: 29%;
+    margin: 0 2.1%;
     float: left;
-    background-color: yellow;
 }
 
 @media only screen and (max-width: 768px) {
@@ -218,46 +268,34 @@ header .desktop ul li a {
 }
 
 .four-col {
-    width: 90%;
-    margin: 0 auto;
-    padding: 3% 0;
+    padding: 2% 3%;
 }
 
 .four-col-one {
-    width: 19%;
-    padding: 0 2.6%;
+    width: 20%;
+    margin: 0 2.3%;
     float: left;
-    background-color: yellow;
 }
 
 .four-col-two {
-    width: 19%;
-    padding: 0 2.6%;
+    width: 20%;
+    margin: 0 2.3%;
     float: left;
-    background-color: yellow;
 }
 
 .four-col-three {
-    width: 19%;
-    padding: 0 2.6%;
+    width: 20%;
+    margin: 0 2.3%;
     float: left;
-    background-color: yellow;
 }
 
 .four-col-four {
-    width: 19%;
-    padding: 0 2.6%;
+    width: 20%;
+    margin: 0 2.3%;
     float: left;
-    background-color: yellow;
 }
 
-@media only screen and (max-width: 1200px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 980px) {
     .four-col-one {
         width: 46%;
         padding: 3% 2%;
@@ -306,34 +344,6 @@ header .desktop ul li a {
 /******************************************
 /* ADDITIONAL STYLES
 /******************************************/
-
-.green-btn {
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 16px;
-    background-color: #71BE3C;
-    width: 200px;
-    padding: 12px;
-    text-align: center;
-    margin: 50px 0px;
-    border-radius: 4px;
-    float:left;
-}
-
-.blue-btn {
-    font-weight: 600;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-size: 16px;
-    background-color: #0099cc;
-    width: 200px;
-    padding: 12px;
-    text-align: center;
-    margin: 50px 0px;
-    border-radius: 4px;
-    float:right;
-}
 
 @font-face {
     font-family: 'icomoon';
