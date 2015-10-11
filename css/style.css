@@ -287,6 +287,12 @@ header .desktop ul li a {
     float: left;
 }
 
+.two-third-col {
+    width: 60%;
+    margin: 0 2.1%;
+    float: left;
+}
+
 @media only screen and (max-width: 768px) {
     .one-third-col {
         width: 100%;
@@ -368,6 +374,44 @@ header .desktop ul li a {
         clear: both;
     }
 }
+
+form {
+    width: 40%;
+    padding: 3% 5%;
+    float: left;
+}
+
+.form-row {
+    padding: 3% 0;
+}
+
+
+.submit-btn {
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #71BE3C;
+    width: 170px;
+    margin: 10px 0;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.contact {
+    width: 40%;
+    padding: 3% 5%;
+    float: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .contact {
+        padding: 3% 5%;
+        float: none;
+    }
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES

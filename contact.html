@@ -14,61 +14,70 @@
             </div>
             <nav class='desktop'>
                 <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
+                    <li><a href='projects.html'>Projects</a></li>
+                    <li><a href='solutions.html'>Solutions</a></li>
+                    <li><a href='services.html'>Services</a></li>
+                    <li><a href='index.html'>Home</a></li>
                 </ul>
             </nav>
             <nav class='mobile'>
                 <div id='hamburger'>MENU</div>
-                <ul class="hide" id="show-this-on-click">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="solutions.html">Solutions</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class='hide' id='show-this-on-click'>
+                    <li><a href='index.html'>Home</a></li>
+                    <li><a href='services.html'>Services</a></li>
+                    <li><a href='solutions.html'>Solutions</a></li>
+                    <li><a href='projects.html'>Projects</a></li>
+                    <li><a href='contact.html'>Contact</a></li>
                 </ul>               
             </nav>
         </header>
 
         <h1>Contact</h1>
 
+        <div class='contact'>
+            <h2><span class='icon-phone'></span></h2>
+            <p>Phone: 03 8395 6197</p>
+            <h2><span class='icon-envelop'></span></h2>
+            <p>Email: hello@nativetechnology.com.au</p>
+            <h2><span class='icon-location'></span></h2>
+            <p>PO Box 2229, St Kilda West VIC 3182</p>
+        </div>
+
         <form>
-            <h3>Contact us</h3>
-
-            <div class="form-row">
-                <label for="name">Your Name</label>
-                <div class="name-fields">
-                <input type="text" name="name[first]" placeholder="First" id="name" autofocus>
-                <input type="text" name="name[last]" placeholder="Last">
+            <intro>Fill in your details and we'll get right back to you</intro>
+            <div class='form-row'>
+                <label for='name'>Your name</label>
+                <div class='name-fields'>
+                <input type='text' name='name[first]' placeholder='First' id='name' autofocus>
+                <input type='text' name='name[last]' placeholder='Last'>
                 </div>
             </div>
 
-            <div class="form-row">
-                <label for="phone">Phone Number</label>
-                <div class="phone-number-fields">
-                <input type="text" name="phone[area_code]" class="phone" maxlength="3" id="phone"> &mdash;
-                <input type="text" name="phone[prefix]" class="phone" maxlength="3"> &mdash;
-                <input type="text" name="phone[line_number]" class="phone" maxlength="4">
+            <div class='form-row'>
+                <label for='phone'>Phone number</label>
+                <div class='phone-number-fields'>
+                <input type='text' name='phone[line_number]' class='phone' maxlength='12'>
                 </div>
             </div>
 
-            <div class="form-row">
-                <label for="address">Address</label>
-                <div class="address-fields">
-                <input type="text" name="address[street_address]" placeholder="Street Address" class="address-street-address" id="address">
-                <input type="text" name="address[line_2]" placeholder="Address Line 2" class="address-line-2">
-                <input type="text" name="address[city]" placeholder="City" class="address-city">
-                <input type="text" name="address[state]" placeholder="State" class="address-state">
-                <input type="text" name="address[postal_code]" placeholder="Postal Code" class="address-postal-code">
+            <div class='form-row'>
+                <label for='email'>Your email</label>
+                <div class='email-fields'>
+                <input type='text' name='email'>
                 </div>
             </div>
+            <div class='form-row'>
+                <label for='email'>Your message</label>
+                <div class='email-fields'>
+                <input type='text' name='message'>
+                </div>
+            </div>
+            <div class='submit-btn'>Submit</div>
         </form>
 
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="js/script.js"></script>
+        <script src='http://code.jquery.com/jquery-latest.min.js'></script>
+        <script src='js/script.js'></script>
 
     </body>
 </html>
