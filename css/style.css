@@ -74,15 +74,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 960px) {
-    body {
-        font-size: 14px;
-    }
-}
-
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: #0099cc;
 }
 
 h1 {
@@ -108,6 +102,18 @@ h3 {
 .intro {
     margin: 2% 5%;
     font-size: 18px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .intro {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .intro {
+        font-size: 14px;
+    }
 }
 
 /******************************************
@@ -144,9 +150,11 @@ header .desktop ul li a {
 .mobile {
     float: right;
     margin: 15px 20px 0 20px;
-    padding: 15px 0 0 0;
+    padding: 15px 10px 10px 10px;
     font-size: 14px;
     font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgba(256,256,256,0.7);
 }
 
 .mobile a {
@@ -249,6 +257,14 @@ header .desktop ul li a {
     float:right;
 }
 
+.green-btn a {
+    color: #ffffff;
+}
+
+.blue-btn a {
+    color: #ffffff;
+}
+
 @media only screen and (max-width: 1200px) {
     .green-btn {
         font-size: 12px;
@@ -277,19 +293,38 @@ header .desktop ul li a {
     }
 }
 
+.two-col {
+    padding: 2% 3% 5% 3%;
+}
+
+.one-half-col {
+    width: 44%;
+    margin: 0 3% 5% 3%;
+    float: left;
+}
+
+@media only screen and (max-width: 960px) {
+    .one-half-col {
+        width: 90%;
+        float: none;
+    }
+}
+
 .three-col {
     padding: 2% 3%;
+    margin: 0% 0;
 }
 
 .one-third-col {
     width: 29%;
     margin: 0 2.1%;
+    padding: 0 0 5% 0;
     float: left;
 }
 
 .two-third-col {
-    width: 60%;
-    margin: 0 2.1%;
+    width: 55%;
+    padding: 0 0 5% 0;
     float: left;
 }
 
@@ -308,46 +343,50 @@ header .desktop ul li a {
 .four-col-one {
     width: 20%;
     margin: 0 2.3%;
+    padding: 0 0 5% 0;
     float: left;
 }
 
 .four-col-two {
     width: 20%;
     margin: 0 2.3%;
+    padding: 0 0 5% 0;
     float: left;
 }
 
 .four-col-three {
     width: 20%;
     margin: 0 2.3%;
+    padding: 0 0 5% 0;
     float: left;
 }
 
 .four-col-four {
     width: 20%;
     margin: 0 2.3%;
+    padding: 0 0 5% 0;
     float: left;
 }
 
 @media only screen and (max-width: 980px) {
     .four-col-one {
         width: 39%;
-        padding: 3% 2%;
+        padding: 3% 2% 6% 2%;
         float: left;
     }
     .four-col-two {
         width: 39%;
-        padding: 3% 2%;
+        padding: 3% 2% 6% 2%;
         float: left;
     }
     .four-col-three {
         width: 39%;
-        padding: 3% 2%;
+        padding: 3% 2% 6% 2%;
         float: left;
     }
     .four-col-four {
         width: 39%;
-        padding: 3% 2%;
+        padding: 3% 2% 6% 2%;
         float: left;
     }
 }
@@ -372,6 +411,57 @@ header .desktop ul li a {
         width: 90%;
         padding: 3% 0;
         clear: both;
+    }
+}
+
+.callout {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 50px 5%;
+    padding: 30px 5%;
+    background-color: #d3d3d3;
+    border-radius: 4px;
+    clear: both;
+}
+
+.callout-btn {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    background-color: #0099cc;
+    width: 170px;
+    margin-top: -10px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    float: right;
+}
+
+.callout-btn a {
+    color: #ffffff;
+}
+
+@media only screen and (max-width: 900px) {
+    .callout {
+        margin: 50px 5%;
+        text-align: center;
+    }
+    .callout-btn {
+        float: none;
+        margin: 15px auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .callout {
+        margin: 50px 5%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .callout-btn {
+        float: none;
+        margin: 15px auto;
+        font-size: 14px;
     }
 }
 
@@ -411,7 +501,6 @@ form {
         float: none;
     }
 }
-
 
 /******************************************
 /* ADDITIONAL STYLES
