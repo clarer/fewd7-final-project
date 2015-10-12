@@ -45,35 +45,44 @@
         </div>
 
         <form>
-            <intro>Fill in your details and we'll get right back to you</intro>
+
+            <p>Fill in your details and we'll get right back to you:</p>
+
             <div class='form-row'>
                 <label for='name'>Your name</label>
-                <div class='name-fields'>
+                <div class='short-fields'>
                 <input type='text' name='name[first]' placeholder='First' id='name' autofocus>
+            </div>
+
+            <div class='form-row'>
+                <div class='short-fields'>
                 <input type='text' name='name[last]' placeholder='Last'>
                 </div>
             </div>
 
             <div class='form-row'>
                 <label for='phone'>Phone number</label>
-                <div class='phone-number-fields'>
+                <div class='short-fields'>
                 <input type='text' name='phone[line_number]' class='phone' maxlength='12'>
                 </div>
             </div>
 
             <div class='form-row'>
                 <label for='email'>Your email</label>
-                <div class='email-fields'>
-                <input type='text' name='email'>
+                <div class='short-fields'>
+                <input type='textarea' name='email'>
                 </div>
             </div>
+
             <div class='form-row'>
-                <label for='email'>Your message</label>
-                <div class='email-fields'>
+                <label for='message'>Your message</label>
+                <div class='message-fields'>
                 <input type='text' name='message'>
                 </div>
             </div>
+
             <div class='submit-btn'>Submit</div>
+
         </form>
 
         <script src='http://code.jquery.com/jquery-latest.min.js'></script>

@@ -10,6 +10,7 @@ Author: Clare Ralston
 html, body, ul, ol, li, form, fieldset, legend {
     margin: 0;
     padding: 0;
+    border: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -50,6 +51,11 @@ caption, th, td {
 input, textarea, select {
     font-size: 110%;
     line-height: 1;
+    border: none;
+}
+
+input:focus {
+    outline: 0;
 }
 
 abbr, acronym {
@@ -85,6 +91,7 @@ h1 {
     color: #ffffff;
     margin: 0;
     padding: 2% 5%;
+    text-shadow: 1px 1px #2f2f2f;
     background: url(../images/welcome.jpg) no-repeat center center fixed;
 
 }
@@ -469,12 +476,53 @@ form {
     width: 40%;
     padding: 3% 5%;
     float: left;
+    font-weight: 400;
+    color: #2f2f2f;
+}
+
+label {
+    color: #2f2f2f;
+}
+
+input, textarea, select {
+    font-weight: 300;
+    color: #2f2f2f;
+    font-size: 14px;
+    background-color: rgba(113,190,60,0);
+    width: 300px;
+/*    margin: 10px 0;
+    padding: 12px;*/
+    border-radius: 4px;
 }
 
 .form-row {
     padding: 3% 0;
 }
 
+.short-fields {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(113,190,60,0.4);
+    width: 300px;
+    margin: 10px 0;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.message-fields {
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: rgba(113,190,60,0.4);
+    width: 300px;
+    margin: 10px 0;
+    padding: 12px;
+    text-align: center;
+    border-radius: 4px;
+    height: 200px;
+}
 
 .submit-btn {
     font-weight: 600;
