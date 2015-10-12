@@ -85,6 +85,10 @@ a {
     color: #0099cc;
 }
 
+a:hover { 
+    color: #026688;
+}
+
 h1 {
     font-size: 36px;
     font-weight: 600;
@@ -126,6 +130,8 @@ h3 {
 /******************************************
 /* LAYOUT
 /******************************************/
+
+/* header elements */
 
 .welcome {
     background: url(../images/welcome.jpg) no-repeat center center fixed;
@@ -195,6 +201,8 @@ header .desktop ul li a {
   }
 }
 
+/* home page elements */
+
 #welcome {
     width: 90%;
     margin: 0 auto;
@@ -250,6 +258,10 @@ header .desktop ul li a {
     float:left;
 }
 
+.green-btn:hover { 
+    background-color: #477725;
+}
+
 .blue-btn {
     font-weight: 600;
     color: #ffffff;
@@ -262,6 +274,10 @@ header .desktop ul li a {
     margin: 50px 0px;
     border-radius: 4px;
     float:right;
+}
+
+.blue-btn:hover { 
+    background-color: #026688;
 }
 
 .green-btn a {
@@ -300,19 +316,24 @@ header .desktop ul li a {
     }
 }
 
+/* column elements */
+
 .two-col {
     padding: 2% 3% 5% 3%;
 }
 
 .one-half-col {
     width: 44%;
+    height: 550px;
     margin: 0 3% 5% 3%;
     float: left;
 }
 
+
 @media only screen and (max-width: 960px) {
     .one-half-col {
         width: 90%;
+        height: 300px;
         float: none;
     }
 }
@@ -421,6 +442,8 @@ header .desktop ul li a {
     }
 }
 
+/* callout elements */
+
 .callout {
     font-size: 20px;
     font-weight: 600;
@@ -448,6 +471,10 @@ header .desktop ul li a {
     color: #ffffff;
 }
 
+.callout-btn:hover { 
+    background-color: #026688;
+}
+
 @media only screen and (max-width: 900px) {
     .callout {
         margin: 50px 5%;
@@ -472,6 +499,14 @@ header .desktop ul li a {
     }
 }
 
+/* portfolio elements */
+
+.one-half-col img:hover {
+    size: 120%;
+}
+
+/* form elements */
+
 form {
     width: 40%;
     padding: 3% 5%;
@@ -490,13 +525,12 @@ input, textarea, select {
     font-size: 14px;
     background-color: rgba(113,190,60,0);
     width: 300px;
-/*    margin: 10px 0;
-    padding: 12px;*/
     border-radius: 4px;
 }
 
 .form-row {
     padding: 3% 0;
+    font-weight: 600;
 }
 
 .short-fields {
@@ -521,7 +555,6 @@ input, textarea, select {
     padding: 12px;
     text-align: center;
     border-radius: 4px;
-    height: 200px;
 }
 
 .submit-btn {
@@ -536,6 +569,12 @@ input, textarea, select {
     text-align: center;
     border-radius: 4px;
 }
+
+.submit-btn:hover { 
+    background-color: #477725;
+}
+
+/* contact page elements */
 
 .contact {
     width: 40%;
