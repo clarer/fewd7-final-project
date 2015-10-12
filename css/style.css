@@ -318,52 +318,6 @@ header .desktop ul li a {
 
 /* column elements */
 
-.two-col {
-    padding: 2% 3% 5% 3%;
-}
-
-.one-half-col {
-    width: 44%;
-    height: 550px;
-    margin: 0 3% 5% 3%;
-    float: left;
-}
-
-@media only screen and (max-width: 1200px) {
-    .one-half-col {
-        width: 44%;
-        height: 450px;
-        float: left;
-    }
-}
-
-@media only screen and (max-width: 960px) {
-    .one-half-col {
-        width: 90%;
-        height: 300px;
-        float: none;
-    }
-    .one-half-col p {
-        margin-top: 4%;
-    }
-    .one-half-col img {
-        width: 50%;
-        float: left;
-        margin-right: 3%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .one-half-col {
-        width: 90%;
-        height: auto;
-    }
-    .one-half-col img {
-        width: 90%;
-        float: none;
-    }
-}
-
 .three-col {
     padding: 2% 3%;
     margin: 0% 0;
@@ -394,51 +348,15 @@ header .desktop ul li a {
     padding: 2% 3%;
 }
 
-.four-col-one {
+.one-forth-col {
     width: 20%;
     margin: 0 2.3%;
     padding: 0 0 5% 0;
     float: left;
 }
 
-.four-col-two {
-    width: 20%;
-    margin: 0 2.3%;
-    padding: 0 0 5% 0;
-    float: left;
-}
-
-.four-col-three {
-    width: 20%;
-    margin: 0 2.3%;
-    padding: 0 0 5% 0;
-    float: left;
-}
-
-.four-col-four {
-    width: 20%;
-    margin: 0 2.3%;
-    padding: 0 0 5% 0;
-    float: left;
-}
-
-@media only screen and (max-width: 980px) {
-    .four-col-one {
-        width: 39%;
-        padding: 3% 2% 6% 2%;
-        float: left;
-    }
-    .four-col-two {
-        width: 39%;
-        padding: 3% 2% 6% 2%;
-        float: left;
-    }
-    .four-col-three {
-        width: 39%;
-        padding: 3% 2% 6% 2%;
-        float: left;
-    }
-    .four-col-four {
+@media only screen and (max-width: 975px) {
+    .one-forth-col {
         width: 39%;
         padding: 3% 2% 6% 2%;
         float: left;
@@ -446,22 +364,7 @@ header .desktop ul li a {
 }
 
 @media only screen and (max-width: 768px) {
-    .four-col-one {
-        width: 90%;
-        padding: 3% 0;
-        clear: both;
-    }
-    .four-col-two {
-        width: 90%;
-        padding: 3% 0;
-        clear: both;
-    }
-    .four-col-three {
-        width: 90%;
-        padding: 3% 0;
-        clear: both;
-    }
-    .four-col-four {
+    .one-forth-col {
         width: 90%;
         padding: 3% 0;
         clear: both;
@@ -527,8 +430,54 @@ header .desktop ul li a {
 
 /* portfolio elements */
 
-.one-half-col img:hover {
-    size: 120%;
+.portfolio {
+    padding: 2% 3% 5% 3%;
+}
+
+.portfolio-item {
+    width: 44%;
+    height: 550px;
+    margin: 0 3% 5% 3%;
+    float: left;
+}
+
+@media only screen and (max-width: 1200px) {
+    .portfolio-item {
+        width: 44%;
+        height: 450px;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .portfolio-item {
+        width: 90%;
+        height: 300px;
+        float: none;
+    }
+    .portfolio-item p {
+        margin-top: 4%;
+    }
+    .portfolio-item img {
+        width: 50%;
+        float: left;
+        margin-right: 3%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio-item{
+        width: 90%;
+        height: auto;
+    }
+    .portfolio-item img {
+        width: 90%;
+        float: none;
+    }
+}
+
+.portfolio img:hover {
+    color: #2f2f2f;
 }
 
 /* form elements */
