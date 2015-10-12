@@ -329,11 +329,37 @@ header .desktop ul li a {
     float: left;
 }
 
+@media only screen and (max-width: 1200px) {
+    .one-half-col {
+        width: 44%;
+        height: 450px;
+        float: left;
+    }
+}
 
 @media only screen and (max-width: 960px) {
     .one-half-col {
         width: 90%;
         height: 300px;
+        float: none;
+    }
+    .one-half-col p {
+        margin-top: 4%;
+    }
+    .one-half-col img {
+        width: 50%;
+        float: left;
+        margin-right: 3%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .one-half-col {
+        width: 90%;
+        height: auto;
+    }
+    .one-half-col img {
+        width: 90%;
         float: none;
     }
 }
