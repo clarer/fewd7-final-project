@@ -491,8 +491,7 @@ header .desktop ul li a {
     position: relative;
     float: left;
     margin-bottom: 3%;
-/*    padding: 2%;
-*/    cursor: pointer;
+    cursor: pointer;
     height: 400px;
 }
 
@@ -509,11 +508,13 @@ header .desktop ul li a {
 
 .tint:hover:after {
     content: "See the live site here >";
-    background: rgba(113,190,60,0.4);
-/*    transition: all .3s linear;
-*//*    filter: blur(5px);
-*//*    padding: 5%;
-*/}
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20%;
+    background: rgba(113,190,60,0.6);
+}
 
 /* form elements */
 
