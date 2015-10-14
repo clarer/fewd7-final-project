@@ -472,14 +472,13 @@ header .desktop ul li a {
 @media only screen and (max-width: 960px) {
     .portfolio-item {
         width: 90%;
-        height: auto;
         float: none;
     }
     .portfolio-item p {
         margin-top: 4%;
     }
     .portfolio-item img {
-        width: 90%;
+        width: 100%;
         margin-right: 3%;
         float: none;
     }
@@ -492,7 +491,7 @@ header .desktop ul li a {
     float: left;
     margin-bottom: 3%;
     cursor: pointer;
-    height: 400px;
+    width: 100%;
 }
 
 .tint:after {
